@@ -7,7 +7,34 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Tutorial/1-Create a Razor Page/RazorPagesMovie/RazorPagesMovie.csproj"
+                "${workspaceFolder}/Final_Project/RazorPagesMovie/RazorPagesMovie.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/Final_Project/RazorPagesMovie/RazorPagesMovie.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/Final_Project/RazorPagesMovie/RazorPagesMovie.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         }
